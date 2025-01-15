@@ -637,7 +637,7 @@ button {
 
 .box {
   margin-bottom: var(--gutter-y);
-  margin-top: 5em;
+  margin-top: 2em;
 }
 
 .carousel {
@@ -655,12 +655,186 @@ button {
 .carousel-inner > .active {
   left: 0;
 }
+
 .carousel-inner > .active,
 .carousel-inner > .next,
 .carousel-inner > .prev {
   display: block;
 }
+
 .carousel-inner > .item {
   position: relative;
   transition: 0.6s ease-in-out left;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--default-text-color);
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.listing.categories {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.listing {
+  display: grid;
+  grid-gap: var(--gutter-x);
+}
+
+.listing .category {
+  position: relative;
+  background: var(--whitespace-color);
+}
+.listing .category,
+.listing .manufacturer,
+.listing .product {
+  position: relative;
+  overflow: hidden;
+  background: var(--image-whitespace-color);
+  border: 1px solid var(--default-border-color);
+  border-radius: var(--border-radius);
+  transform: scale(1);
+  transition: all 100ms linear;
+  color: inherit;
+  text-decoration: none;
+}
+
+.listing a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.listing .category .caption {
+  background: var(--whitespace-color);
+  padding: calc(var(--gutter-y) / 2) var(--gutter-x);
+  color: var(--default-text-color);
+  text-align: center;
+}
+
+.listing .category .caption .name {
+  font-size: 1.15em;
+}
+.listing .category .caption * {
+  font-weight: normal;
+  color: inherit;
+  margin: 0;
+}
+
+.listing .category .caption * {
+  font-weight: normal;
+  color: inherit;
+  margin: 0;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.card {
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: var(--gutter-y);
+  background: var(--card-background-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: var(--card-text-color);
+}
+
+.card-body {
+  padding-top: 0;
+}
+.card .card-body {
+  background: var(--card-body-background-color);
+}
+.card .card-header,
+.card .card-filter,
+.card .card-body,
+.card .card-footer {
+  padding: var(--gutter-y) var(--gutter-x);
+}
+
+@media (min-width: 992px) {
+  .listing.products.columns {
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  }
+}
+
+.listing .product {
+  position: relative;
+  background: var(--whitespace-color);
+}
+
+.listing .product .image-wrapper {
+  background: var(--image-whitespace-color);
+}
+
+.listing.columns .product .image {
+  width: 100%;
+  height: auto;
+}
+.thumbnail > img,
+.thumbnail a > img,
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.listing.columns .product .info {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+h4 {
+  color: var(--default-text-color);
+}
+
+.listing .product .name {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 115%;
+  border-bottom: 0;
+  margin: 0;
+}
+
+.listing.columns .product .price-wrapper {
+  position: initial;
+}
+.listing .product .price-wrapper {
+  font-size: 1.25em;
+}
+
+.listing .product .price-wrapper .price {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.listing .product .manufacturer-name {
+  color: var(--default-text-color);
+  font-size: 0.9em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 200%;
+  opacity: 0.75;
 }
