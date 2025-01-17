@@ -11,6 +11,18 @@ const Layout = () => {
       <Header />
       <Outlet />
       <Footer />
+      <section id="copyright">
+        <div className="fourteen-forty container notice">
+          Copyright © 2025 Shirovka Hackers. All rights reserved · Powered by{" "}
+          <a
+            href="http://igabztbruiyzea4vobbepke4wjfds4pbwk5peqtbihvzpz6cbz6colqd.onion"
+            target="_blank"
+            title="High performing e-commerce platform"
+          >
+            Zakonnyy®
+          </a>
+        </div>
+      </section>
     </div>
   );
 };
