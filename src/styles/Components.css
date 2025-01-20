@@ -606,12 +606,14 @@ legend {
   font-size: inherit;
   margin-inline-start: -1px;
 }
+
 .btn.btn-default {
   background-color: var(--default-button-background-color);
   color: var(--default-button-text-color);
   border: 1px solid var(--default-button-border-color);
   text-decoration: none;
 }
+
 .btn {
   --input-padding-x: 2em;
   display: inline-block;
@@ -694,6 +696,7 @@ h1 {
   position: relative;
   background: var(--whitespace-color);
 }
+
 .listing .category,
 .listing .manufacturer,
 .listing .product {
@@ -723,6 +726,7 @@ h1 {
 .listing .category .caption .name {
   font-size: 1.15em;
 }
+
 .listing .category .caption * {
   font-weight: normal;
   color: inherit;
@@ -762,9 +766,11 @@ h1 {
 .card-body {
   padding-top: 0;
 }
+
 .card .card-body {
   background: var(--card-body-background-color);
 }
+
 .card .card-header,
 .card .card-filter,
 .card .card-body,
@@ -791,6 +797,7 @@ h1 {
   width: 100%;
   height: auto;
 }
+
 .thumbnail > img,
 .thumbnail a > img,
 .img-responsive {
@@ -825,6 +832,7 @@ h4 {
 .listing.columns .product .price-wrapper {
   position: initial;
 }
+
 .listing .product .price-wrapper {
   font-size: 1.25em;
 }
@@ -908,6 +916,7 @@ ul.list-unstyled {
 #copyright .notice {
   text-align: center;
 }
+
 #copyright .container {
   padding: 0.75em var(--gutter-x);
 }
@@ -949,11 +958,13 @@ ul.list-unstyled {
   display: flex;
   flex-direction: column;
 }
+
 @media (min-width: 768px) {
   .nav li {
     flex: 0 0 auto;
   }
 }
+
 .nav li {
   position: relative;
   flex: 0 0 100%;
@@ -963,6 +974,7 @@ ul.list-unstyled {
   background: var(--pills-background-color-active);
   color: var(--pills-text-color-active);
 }
+
 .nav-pills li a {
   margin: 1px 0;
   background: var(--pills-background-color);
@@ -970,6 +982,7 @@ ul.list-unstyled {
   transition: all 125ms linear;
   color: var(--pills-text-color);
 }
+
 .nav li > a {
   position: relative;
   display: block;
